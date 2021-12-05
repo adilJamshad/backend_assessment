@@ -23,6 +23,7 @@ const processMessage = async (kafkaMessage) => {
         social_links: JSON.stringify(social_links),
       });
     }
+    console.log("event: ", event_name);
   } catch (err) {
     console.log(err);
   }
